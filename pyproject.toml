@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olchat"
+version = "0.0.1"
+dependencies = [
+    "ollama==0.3.2",
+]
+
+[tool.setuptools.packages]
+find = {}
+
+[project.scripts]
+local_chat = "src.main:main"
